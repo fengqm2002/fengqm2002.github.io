@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Title</title>
+    <style>
+
+    </style>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function() {
+            var c = new Vue({
+                el: '#box',
+                data: {
+                    msg: 'welcome vue'
+                }
+            });
+        }
+    </script>
 </head>
 <body>
-    <h2>Welcome to Fengqm web pages.^-^</h2>
+    <div id="box">
+        {{msg}}
+    </div>
 </body>
 </html>

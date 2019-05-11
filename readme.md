@@ -18,7 +18,9 @@ C、git commit -m ‘提交说明’  将修改后的文件提交到本地仓库
 
 D、连接到远程仓库，并将代码同步到远程仓库
 
-git remote add origin 远程仓库地址
+git remote add origin 远程仓库地址 //可以省略
+
+git remote add origin https://github.com/fengqm2002
 
 E、git pull origin master  // 把本地仓库的变化连接到远程仓库主分支
 
