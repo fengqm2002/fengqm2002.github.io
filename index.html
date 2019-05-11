@@ -7,20 +7,27 @@
 
     </style>
     <script src="vue.js"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript">
+        var Ip=returnCitySN['cip']
+        var cityname=returnCitySN['cname']
+        localStorage.setItem('Ip', Ip)
+        localStorage.setItem('cityname', cityname)
+    </script>
     <script>
         window.onload=function() {
             var c = new Vue({
                 el: '#box',
                 data: {
-                    msg: 'welcome vue'
+                    msg: localStorage.getItem('Ip')
                 }
             });
         }
     </script>
 </head>
 <body>
-    <div id="box">
-        {{msg}}
-    </div>
+<div id="box">
+    {{msg}}
+</div>
 </body>
 </html>
